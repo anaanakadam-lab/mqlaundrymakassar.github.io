@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MQ Laundry Karpet</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f5f8fc;
+color:#222;
+line-height:1.6;
+}
+
+header{
+background:linear-gradient(135deg,#0d6efd,#3aa7ff);
+padding:15px 5%;
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.brand{
+font-size:28px;
+font-weight:800;
+color:white;
+}
+
+nav{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:14px;
+font-weight:bold;
+padding:8px 10px;
+border-radius:8px;
+transition:.3s;
+}
+
+nav a:hover{
+background:rgba(255,255,255,.15);
+}
+
+.hero{
+padding:70px 5%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+align-items:center;
+background:linear-gradient(to bottom,#eef6ff,#ffffff);
+}
+
+.hero h1{
+font-size:44px;
+line-height:1.2;
+margin-bottom:15px;
+color:#0b3d91;
+}
+
+.hero p{
+font-size:18px;
+color:#555;
+margin-bottom:25px;
+}
+
+.hero img{
+width:100%;
+height:420px;
+object-fit:contain;
+background:white;
+padding:15px;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.btn{
+display:inline-block;
+padding:14px 22px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+margin:5px;
+}
+
+.btn-wa{
+background:#25D366;
+color:white;
+}
+
+.btn-blue{
+background:#0d6efd;
+color:white;
+}
+
+section{
+padding:70px 5%;
+}
+
+.title{
+text-align:center;
+font-size:34px;
+color:#0b3d91;
+margin-bottom:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card,.testi{
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.06);
+text-align:center;
+}
+
+.price{
+font-size:28px;
+font-weight:bold;
+color:#0d6efd;
+}
+
+.foto-testi{
+width:100%;
+max-width:220px;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:10px;
+border:3px solid #0d6efd;
+box-shadow:0 8px 18px rgba(0,0,0,.15);
+}
+
+.foto-lokasi{
+width:100%;
+max-width:700px;
+height:420px;
+object-fit:cover;
+border-radius:18px;
+margin:0 auto 25px auto;
+display:block;
+border:4px solid #0d6efd;
+box-shadow:0 12px 28px rgba(0,0,0,.15);
+}
+
+.cta{
+background:linear-gradient(135deg,#0d6efd,#3aa7ff);
+color:white;
+text-align:center;
+padding:70px 5%;
+}
+
+footer{
+background:#0b1d3a;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+.wa-float{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+width:62px;
+height:62px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+box-shadow:0 10px 25px rgba(0,0,0,.22);
+z-index:999;
+}
+
+.wa-float img{
+width:32px;
+}
+
+@media(max-width:900px){
+.hero{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+.hero img{
+height:280px;
+}
+
+.foto-lokasi{
+height:260px;
+}
+
+nav{
+justify-content:center;
+}
+
+.brand{
+font-size:24px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="navbar">
+
+<div class="brand">MQ Laundry</div>
+
+<nav>
+<a href="#home">Beranda</a>
+<a href="#layanan">Layanan</a>
+<a href="#harga">Harga</a>
+<a href="#testimoni">Testimoni</a>
+<a href="#hasil">Hasil</a>
+<a href="#tips">Tips</a>
+<a href="#lokasi">Lokasi</a>
+<a href="#kontak">Kontak</a>
+</nav>
+
+</div>
+</header>
+
+<section class="hero" id="home">
+
+<div>
+<h1>Cuci Karpet Bersih, Wangi & Profesional</h1>
+<p>Melayani cuci karpet rumah, masjid, kantor dan usaha. Antar jemput area Makassar.</p>
+
+<a href="https://wa.me/6285399888080" class="btn btn-wa">Pesan Sekarang</a>
+<a href="#harga" class="btn btn-blue">Lihat Harga</a>
+</div>
+
+<div>
+<img src="image.png" alt="MQ Laundry">
+</div>
+
+</section>
+
+<section id="layanan">
+<h2 class="title">Layanan Kami</h2>
+
+<div class="grid">
+<div class="card"><h3>Karpet Rumah</h3></div>
+<div class="card"><h3>Karpet Masjid</h3></div>
+<div class="card"><h3>Karpet Kantor</h3></div>
+</div>
+
+</section>
+
+<section id="harga">
+<h2 class="title">Daftar Harga</h2>
+
+<div class="grid">
+<div class="card"><h3>Karpet besar +3m</h3><p class="price">Rp20.000 / m²</p></div>
+<div class="card"><h3>Karpet kecil +1m</h3><p class="price">Rp25.000 / m²</p></div>
+<div class="card"><h3>Masjid / Banyak</h3><p class="price">Hubungi Kami</p></div>
+</div>
+
+<div class="card" style="max-width:900px;margin:25px auto 0 auto;background:#eaf7ea;border:2px solid #25D366;">
+<h3 style="color:#128C7E;margin-bottom:10px;display:flex;align-items:center;justify-content:center;gap:10px;">
+<img src="https://cdn-icons-png.flaticon.com/512/3097/3097144.png" style="width:38px;height:38px;">
+<span>Gratis Antar Jemput</span>
+</h3>
+
+<p style="font-size:17px;line-height:1.8;">
+Gratis antar jemput untuk transaksi di atas <b>Rp100.000</b> wilayah <b>Tamalanrea</b>.<br><br>
+Diluar wilayah Tamalanrea, tarif pengantaran dikenakan biaya sesuai jarak lokasi penjemputan karpet Anda.
+</p>
+</div>
+
+</section>
+
+<!-- TESTIMONI -->
+<section id="testimoni">
+<h2 class="title">Testimoni Pelanggan</h2>
+
+<div class="grid">
+
+<div class="testi">
+<img src="testimoni1.jpg" class="foto-testi">
+<p>Pelayanan sangat bagus dan cepat.</p>
+</div>
+
+<div class="testi">
+<img src="testimoni2.jpg" class="foto-testi">
+<p>Karpet jadi bersih dan harum.</p>
+</div>
+
+<div class="testi">
+<img src="testimoni3.jpg" class="foto-testi">
+<p>Sangat recommended.</p>
+</div>
+
+</div>
+</section>
+
+<!-- HASIL -->
+<section id="hasil">
+<h2 class="title">Foto Sebelum & Sesudah</h2>
+
+<div class="grid">
+
+<div class="testi">
+<img src="sebelum1.jpg" class="foto-testi">
+<p><b>Sebelum</b></p>
+<img src="sesudah1.jpg" class="foto-testi">
+<p><b>Sesudah</b></p>
+</div>
+
+<div class="testi">
+<img src="sebelum2.jpg" class="foto-testi">
+<p><b>Sebelum</b></p>
+<img src="sesudah2.jpg" class="foto-testi">
+<p><b>Sesudah</b></p>
+</div>
+
+<div class="testi">
+<img src="sebelum3.jpg" class="foto-testi">
+<p><b>Sebelum</b></p>
+<img src="sesudah3.jpg" class="foto-testi">
+<p><b>Sesudah</b></p>
+</div>
+
+</div>
+</section>
+
+<!-- TIPS -->
+<section id="tips">
+<h2 class="title">Tips Agar Karpet Tidak Cepat Rusak</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/995/995053.png" style="width:65px;margin-bottom:15px;">
+<h3>Bersihkan Noda Cepat</h3>
+<p>Bersihkan noda sesegera mungkin sebelum mengering agar tidak meninggalkan bekas.</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png" style="width:65px;margin-bottom:15px;">
+<h3>Jangan Ditarik</h3>
+<p>Hindari menarik-narik karpet saat dipindahkan agar serat dan jahitan tidak rusak.</p>
+</div>
+
+<div class="card">
+<img src="image.png" style="width:65px;height:65px;object-fit:cover;border-radius:50%;margin-bottom:15px;border:3px solid #0d6efd;">
+<h3>Cuci Profesional</h3>
+<p>Gunakan jasa cuci profesional minimal setiap 6 bulan sekali agar karpet awet dan higienis.</p>
+</div>
+
+</div>
+</section>
+
+<section id="lokasi">
+<h2 class="title">Lokasi Kami</h2>
+
+<div class="card" style="max-width:800px;margin:auto;text-align:center;">
+
+<img src="foto-lokasi.jpg" class="foto-lokasi" alt="Lokasi MQ Laundry">
+
+<h3 style="margin-bottom:15px;display:flex;align-items:center;justify-content:center;gap:10px;">
+<img src="image.png" style="width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid #0d6efd;">
+<span>MQ Laundry Karpet</span>
+</h3>
+
+<p style="font-size:18px;line-height:1.8;">
+Jl. Poros Perumahan Dewi Karmila Sari No.4 <br>
+Samping Bintang Perintis <br>
+Kec. Tamalanrea, Kel. Tamalanrea <br>
+Makassar 90245
+</p>
+
+<br>
+
+<a href="https://www.google.com/maps/search/?api=1&query=Jl.+Poros+Perumahan+Dewi+Karmila+Sari+No.4+Tamalanrea+Makassar" class="btn btn-blue" target="_blank" style="display:inline-flex;align-items:center;gap:10px;">
+<img src="image.png" style="width:24px;height:24px;border-radius:50%;object-fit:cover;">
+<span>Buka Google Maps</span>
+</a>
+
+</div>
+</section>
+
+<section class="cta" id="kontak">
+<h2>Butuh Cuci Karpet Hari Ini?</h2>
+<p>Hubungi kami sekarang juga</p><br>
+<a href="https://wa.me/6285399888080" class="btn btn-wa">Chat WhatsApp</a>
+</section>
+
+<footer>
+© 2026 MQ Laundry Karpet
+</footer>
+
+<a href="https://wa.me/6285399888080" class="wa-float">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
+
+</body>
+</html>
